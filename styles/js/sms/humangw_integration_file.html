@@ -1,0 +1,55 @@
+<html>
+    <head></head>
+    <body>
+        <!-- O CABECALHO DO FORMULARIO DEVE SEGUIR O ESPECIFICADO ABAIXO -->
+        <!-- O enctype="multipart/form-data" EH JUSTAMENTE POR CAUSA DO -->
+        <!-- ARQUIVO QUE SERÃO ENVIADO AO SERVICO -->
+        <form method="post" enctype="multipart/form-data"
+            action="http://api.zenvia360.com.br/GatewayIntegration/msgSms.do">
+            
+            <h2>Formulario de envio multiplo de SMS</h2>
+            
+            <!-- PARAMETRO OBRIGATORIO E IMUTAVEL PARA ESTA ACAO -->
+            <input type="hidden" name="dispatch" value="sendMultiple" />
+            
+            <table>
+                <tr>
+                    <!-- ALIAS DA CONTA DO CLIENTE -->
+                    <td>Conta:  <label style="color: red;">*</label> </td>
+                    <td><input type="text" name="account" /></td>
+                </tr>
+                <tr>
+                    <!-- SENHA DE ACESSO A CONTA -->
+                    <td>Senha:  <label style="color: red;">*</label> </td>
+                    <td><input type="text" name="code" /></td>
+                </tr>
+                <tr>
+                    <!-- LAYOUT DO ARQUIVO A SER ENVIADO -->
+                    <td>Layout:  <label style="color: red;">*</label> </td>
+                    <td>
+                        <select name="type">
+                            <option value="A">A - destino;mensagem</option>
+                            <option value="B">B - destino;mensagem;origem</option>
+                            <option value="C">C - destino;mensagem;id</option>
+                            <option value="D">D - destino;mensagem;id;origem</option>
+                            <option value="E">E - destino;mensagem;id;origem;data de agendamento</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- ARQUIVO QUE SERÃƒO ENVIADO NO FORMATO ESCOLHIDO -->
+                    <td>Arquivo:  <label style="color: red;">*</label> </td>
+                    <td><input type="file" name="file" /></td>
+                </tr>
+				<tr>
+                	
+                    <td><label style="color: red;">* Campos obrigatórios</label></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" /></td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>

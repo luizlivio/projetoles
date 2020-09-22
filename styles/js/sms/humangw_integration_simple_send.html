@@ -1,0 +1,71 @@
+<html>
+    <head></head>
+    <body>
+        <!-- O CABECALHO DO FORMULARIO DEVE SEGUIR O ESPECIFICADO ABAIXO -->
+        <form method="post" enctype="application/x-www-form-urlencoded"
+            action="http://api.zenvia360.com.br/GatewayIntegration/msgSms.do">
+            
+            <h2>Formulario de envio simples de SMS</h2>
+            
+            <!-- PARAMETRO OBRIGATORIO E IMUTAVEL PARA ESTA ACAO -->
+            <input type="hidden" name="dispatch" value="send" />
+            
+            <table>
+                <tr>
+                    <!-- ALIAS DA CONTA DO CLIENTE -->
+                    <td>Conta: <label style="color: red;">*</label> </td>
+                    <td><input type="text" name="account" /></td>
+                </tr>
+                <tr>
+                    <!-- SENHA DE ACESSO A CONTA -->
+                    <td>Senha: <label style="color: red;">*</label> </td>
+                    <td><input type="text" name="code" /></td>
+                </tr>
+                <tr>
+                    <!-- MENSAGEM -->
+                    <td>Mensagem: <label style="color: red;">*</label> </td>
+                    <td><textarea rows="5" cols="25" name="msg"></textarea></td>
+                </tr>
+                <tr>
+                    <!-- REMETENTE DA MENSAGEM -->
+                    <td>Remetente: </td>
+                    <td><input type="text" name="from" /></td>
+                </tr>
+                <tr>
+                    <!-- CELULAR (FORMATO: DDI + DDD + NUMERO) -->
+                    <td>Celular: <label style="color: red;">*</label> </td>
+                    <td><input type="text" name="to" /></td>
+                </tr>
+                <tr>
+                    <!-- ID DA MENSAGEM -->
+                    <td>Id: </td>
+                    <td><input type="text" name="id" /></td>
+                </tr>
+                <tr>
+                    <!-- DATA DE AGENDAMENTO -->
+                    <td>Data de agendamento: </td>
+                    <td><input type="text" name="schedule" value="dd/mm/aaaa hh:mm:ss" /></td>
+                </tr>
+                <tr>
+                    <!-- OPCOES DE CALLBACK -->
+                    <td>Opções de callback </td>
+                    <td>
+	                    <select name="callbackOption">
+	                    	<option value="0" selected="selected">Inativo</option>
+	                    	<option value="1">Somente status final da mensagem</option>
+	                    	<option value="2">Status intermediário e final da mensagem</option>
+	                    </select>
+                    </td>
+                </tr>
+                <tr>
+                	
+                    <td><label style="color: red;">* Campos obrigatórios</label></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" /></td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>

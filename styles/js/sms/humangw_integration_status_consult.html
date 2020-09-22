@@ -1,0 +1,39 @@
+<html>
+	<head></head>
+	<body>
+		<!-- O CABECALHO DO FORMULARIO DEVE SEGUIR O ESPECIFICADO ABAIXO -->
+		<form method="post" action="http://api.zenvia360.com.br/GatewayIntegration/msgSms.do">
+			
+			<h2>Formulario de consulta multipla de SMS</h2>
+			
+			<!-- PARAMETRO OBRIGATORIO E IMUTAVEL PARA ESTA ACAO -->
+			<input type="hidden" name="dispatch" value="checkMultiple" /><br />
+			
+			<table>
+				<tr>
+					<!-- ALIAS DA CONTA DO CLIENTE -->
+					<td>Conta:  <label style="color: red;">*</label> </td>
+					<td><input type="text" value="" name="account" /></td>
+				</tr>
+				<tr>
+					<!-- SENHA DE ACESSO A CONTA -->
+					<td>Senha: <label style="color: red;">*</label> </td>
+					<td><input type="text" value="" name="code" /></td>
+				</tr>
+				<tr>
+					<!-- LISTA DE IDS DAS MENSAGENS SEPARADOS POR PONTO-E-VIRGULA -->
+					<td>Lista de Ids: <label style="color: red;">*</label> </td>
+					<td><textarea rows="5" cols="25" name="idList"></textarea></td>
+				</tr>
+				<tr>
+                	
+                    <td><label style="color: red;">* Campos obrigatórios</label></td>
+                </tr>
+				<tr>
+					<td><input type="submit" /></td>
+				</tr>
+			</table>
+		</form>
+	
+	</body>
+</html>
