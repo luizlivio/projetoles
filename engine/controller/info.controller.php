@@ -70,7 +70,11 @@ switch($page){
     break;
 	
 	case "inicial":
-		echo "logado";
-	break;
+		$tpl->display("engine/view/InfoPanel/pages/Inicial/system.inicial.tpl");
+    break;
+    
+    case "usuarios":
+        include "Intranet/info.Usuarios.controller.php";
+    break;
 }
 ?>

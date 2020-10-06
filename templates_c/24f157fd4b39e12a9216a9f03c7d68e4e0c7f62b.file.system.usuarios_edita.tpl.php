@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2019-07-24 15:29:06
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-06 13:51:44
          compiled from "engine\view\InfoPanel\pages\Usuarios\system.usuarios_edita.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:126845cf95627494315-61249187%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '24f157fd4b39e12a9216a9f03c7d68e4e0c7f62b' => 
     array (
       0 => 'engine\\view\\InfoPanel\\pages\\Usuarios\\system.usuarios_edita.tpl',
-      1 => 1561603812,
+      1 => 1602003063,
       2 => 'file',
     ),
   ),
@@ -57,8 +57,7 @@ $_smarty_tpl->tpl_vars['usu']->_loop = true;
 ">
 		
 		<label>Senha</label>
-		<input type="text" name="senha" class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['usu']->value['senhasite'];?>
-">
+		<input type="password" name="senha" class="form-control">
 		
 		<label>Status</label>
 		<select name="status" class="form-control">
@@ -66,21 +65,7 @@ $_smarty_tpl->tpl_vars['usu']->_loop = true;
 			<option value="T" <?php if ($_smarty_tpl->tpl_vars['usu']->value['inativo']=="T"){?>selected<?php }?>>DESATIVADO</option>
 		</select>
 		
-		<label>Email</label>
-		<input type="text" name="email" class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['usu']->value['Email'];?>
-">
 		
-		<label>Telefone</label>
-		<input type="text" name="telefone" class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['usu']->value['Telefone'];?>
-">
-		
-		<label>DDD de saída dos envios</label>
-		<input type="text" name="ddd" class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['usu']->value['DDD'];?>
-">
-		
-		<label>Valor</label>
-		<input type="text" name="valor" class="form-control" value="<?php echo number_format($_smarty_tpl->tpl_vars['usu']->value['Valor'],2,',','.');?>
-">
 		
 		<br>
 		<div>

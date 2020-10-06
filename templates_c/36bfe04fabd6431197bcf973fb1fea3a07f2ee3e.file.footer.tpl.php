@@ -1,4 +1,25 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" />
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-06 13:35:35
+         compiled from "C:\xampp\htdocs\sysmile\engine\view\InfoPanel\master\footer.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:220645f7c9bdf02fd47-80614608%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '36bfe04fabd6431197bcf973fb1fea3a07f2ee3e' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\sysmile\\engine\\view\\InfoPanel\\master\\footer.tpl',
+      1 => 1602002134,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '220645f7c9bdf02fd47-80614608',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5f7c9bdf04be37_96270663',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5f7c9bdf04be37_96270663')) {function content_5f7c9bdf04be37_96270663($_smarty_tpl) {?><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" />
 
 <script src="/styles/js/jquery.js"></script> 
 <script src="/styles/js/jquery-ui.js"></script> 
@@ -26,4 +47,4 @@
 
 
 </body>
-</html>
+</html><?php }} ?>
