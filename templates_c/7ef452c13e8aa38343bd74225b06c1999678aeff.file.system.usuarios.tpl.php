@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2019-07-18 00:28:13
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-20 15:45:59
          compiled from "engine\view\InfoPanel\pages\Usuarios\system.usuarios.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:53425cf95622a1b967-95464150%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7ef452c13e8aa38343bd74225b06c1999678aeff' => 
     array (
       0 => 'engine\\view\\InfoPanel\\pages\\Usuarios\\system.usuarios.tpl',
-      1 => 1561603812,
+      1 => 1603219556,
       2 => 'file',
     ),
   ),
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<h1>Usuários</h1>
 	<div><a href="/info/usuarios/usuarios_novo" class="btn btn-sm btn-primary">Novo Usuario</a></div>
 	
-	<table class="table table-hover table-stripped">
+	<table class="sortable table table-hover table-stripped">
 		<thead>
         <tr>
             <th>ID</th>
@@ -55,9 +55,9 @@ $_smarty_tpl->tpl_vars['usu']->_loop = true;
         <tr>
             <td><?php echo $_smarty_tpl->tpl_vars['usu']->value['userid'];?>
 </td>
-            <td><?php echo utf8_encode($_smarty_tpl->tpl_vars['usu']->value['nome']);?>
+            <td><?php echo $_smarty_tpl->tpl_vars['usu']->value['nome'];?>
 </td>
-			<td><?php echo utf8_encode($_smarty_tpl->tpl_vars['usu']->value['LOGIN']);?>
+			<td><?php echo $_smarty_tpl->tpl_vars['usu']->value['LOGIN'];?>
 </td>
 			<td><?php if ($_smarty_tpl->tpl_vars['usu']->value['inativo']=='F'){?>ATIVO<?php }else{ ?>DESATIVADO<?php }?></td>
 			<td><a href="/info/usuarios/usuarios_ficha/<?php echo $_smarty_tpl->tpl_vars['usu']->value['userid'];?>

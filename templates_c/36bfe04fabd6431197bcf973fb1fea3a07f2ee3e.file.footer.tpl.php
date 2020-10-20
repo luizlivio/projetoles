@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-10-06 13:35:35
+<?php /* Smarty version Smarty-3.1.13, created on 2020-10-20 15:44:26
          compiled from "C:\xampp\htdocs\sysmile\engine\view\InfoPanel\master\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:220645f7c9bdf02fd47-80614608%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '36bfe04fabd6431197bcf973fb1fea3a07f2ee3e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sysmile\\engine\\view\\InfoPanel\\master\\footer.tpl',
-      1 => 1602002134,
+      1 => 1603219462,
       2 => 'file',
     ),
   ),
@@ -31,17 +31,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script src="/styles/js/core.medic.cti.js"></script>
 <script src="/styles/js/Chart.js"></script>
 <script src="/styles/js/c3.js"></script>
+<script src="/styles/js/sorttable.js"></script>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="/styles/js/bootstrap-slider.js"></script>
 
-<script type="text/javascript" src="/styles/js/info/moment.js"></script>
+<!--<script type="text/javascript" src="/styles/js/info/moment.js"></script>
 <script type="text/javascript" src="/styles/js/angularjs/angular.min.js"></script>
 <script type="text/javascript" src="/styles/js/angularjs/angular-pt-br.js"></script>
 
 
 <script src="/styles/js/core.info.js"></script>
 <script type="text/javascript" src="/styles/js/info/services.js"></script>
-<script type="text/javascript" src="/styles/js/info/core.js"></script>
+<script type="text/javascript" src="/styles/js/info/core.js"></script>-->
 
 
 
