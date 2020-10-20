@@ -76,5 +76,9 @@ switch($page){
     case "usuarios":
         include "Intranet/info.Usuarios.controller.php";
     break;
+
+    case "cadastros":
+        include "Intranet/info.Cadastros.controller.php";
+    break;
 }
 ?>
